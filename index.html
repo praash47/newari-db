@@ -6,48 +6,56 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="container-fluid">
-		<form autocomplete="off">
-			<div class="form-group">
-			    <label for="newari-text">Newari Text</label>
-			    <input type="text" class="form-control" id="newari-text">
-			</div>
-			<div class="form-group">
-			    <label for="nepali-text">Nepali Text</label>
-			    <input type="text" class="form-control" id="nepali-text">
-			</div>
-			<div class="form-group">
-			  <label for="category">Category</label>
-			  <select class="form-control" id="category">
-			    <option disabled="disabled" selected="selected">select one</option>
-			  </select>
-			</div>
-			<div class="form-group">
-			  <label for="posted-by">Posted By</label>
-			  <select class="form-control" id="posted-by">
-			    <option disabled="disabled" selected="selected">select one</option>
-			    <option>praash47</option>
-			    <option>sstha.menu 🌸</option>
-			  </select>
-			</div>
-			 <button type="submit" class="btn btn-primary mb-2">Add</button>
-		</form>
-		<hr>
-		<form autocomplete="off">
-			<div class="form-group">
-			    <label for="newari-text">Category Name</label>
-			    <input type="text" class="form-control" id="newari-text">
-			</div>
-			 <button type="submit" class="btn btn-primary mb-2">Add Category</button>
-			  <select class="form-control" id="posted-by">
-			    <option disabled="disabled" selected="selected">Delete Category</option>
-			    <option>praash47</option>
-			    <option>sstha.menu 🌸</option>
-			  </select>
-		</form>
-	</div>
+<div class="container">
+	<h1>Jhigu Newa Thya (Our Newa Place)</h1>
+		<!-- Button trigger modal -->
+	<!-- Large modal -->
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Add New</button>
 
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	          <h5 class="modal-title" id="exampleModalLabel">Add New Translation</h5>
+	          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	            <span aria-hidden="true">&times;</span>
+	          </button>
+	        </div>
+	        <div class="modal-body">
+	          <div class="form-group">
+	              <label for="formGroupExampleInput">Newari Text</label>
+	              <input type="text" class="form-control" id="formGroupExampleInput">
+	            </div>
+	            <div class="form-group">
+	              <label for="formGroupExampleInput2">Nepali Text</label>
+	              <input type="text" class="form-control" id="formGroupExampleInput2">
+	            </div>
+	            <div class="form-group">
+	                <label for="exampleFormControlSelect1">Category</label>
+	                <select class="form-control" id="exampleFormControlSelect1">
+	                  <option>No category yet</option>
+	                </select>
+	            </div>
+	            <div class="form-group">
+	                <label for="exampleFormControlSelect1">Posted By:</label>
+	                <select class="form-control" id="exampleFormControlSelect1">
+	                  <option selected="selected" disabled="disabled">select one</option>
+	                  <option>praash47</option>
+	                  <option>sstha.menu 🌸</option>
+	                </select>
+	              </div>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	          <button type="button" class="btn btn-primary">Add</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 	<script src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
